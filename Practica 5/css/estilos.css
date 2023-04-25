@@ -1,0 +1,37 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.seleccionado{
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+}
+#elemento3{
+    color: red;
+}
+#capa2{
+    background-color: yellow;
+    border: 10px solid purple;
+    margin-bottom: 300px;
+
+}
+.titulo{
+font-size: 100px;
+}
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+
+a:hover{
+    background-color: blueviolet;
+}
+a:active{
+    color: blue;
+}
