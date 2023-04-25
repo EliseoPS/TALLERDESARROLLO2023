@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+    <style>
+        body{
+            animation: colores 10s infinite;
+        }
+        @keyframes colores{
+            0% {
+                background: red;
+            }
+            25% {
+                background: blue;
+            }
+            50% {
+                background: red;
+            }
+            100% {
+                background: blue;
+            }
+
+        }
+        .cuadroBlanco{
+            position: absolute;
+            background: white;
+            animation: muevecuadro 5s infinite;
+            text-align: center;
+        }
+        #cuadroBlanco1{
+            width: 100px;
+            height: 100px;
+            left: 50px;
+        }
+        #cuadroBlanco2{
+            width: 100px;
+            height: 100px;
+            left: 200px;
+        }
+        #cuadroRojo{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 350px;
+            animation: mueveRojo 4s infinite;
+        }
+        #cuadroMulticolor{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            left: 500px;
+            animation: moverMC 1s infinite;
+        }
+        @keyframes moverMC{
+            0% {
+                top: 0px;
+                left: 500px;
+                background: red;
+            }
+            25% {
+                top: 0px;
+                left: 600px;
+                background: blue;
+            }
+            50% {
+                top: 0px;
+                left: 500px;
+                background: yellow;
+            }
+            100% {
+                top: 0px;
+                left: 500px;
+                background: lightgreen;
+            }
+        }
+        #circulo{
+            width: 100px;
+            height: 100px;
+            left: 800px;
+            background: limegreen;
+            position: absolute;
+            border-radius: 50%;
+            animation: crecer 5s infinite;
+        }
+        @keyframes crecer{
+            0%{top: 0px; width: 100px; height: 100px;}
+            100%{top: 200px; width: 100%; height: 100%;}
+        }
+        @keyframes mueveRojo{
+            0%{
+                top: 100px;
+            }
+            25%{
+                top: 200px;
+                width: 300px;
+                background-color: yellow;
+                border: 5px solid black;
+            }
+            50%{
+                top: 50px;
+            }
+            100%{
+                top: 100px;
+            }
+        }
+        @keyframes muevecuadro{
+            from{
+                top: 0px;
+            }
+            to{
+                top: 200px;
+            }
+        }
+        h1{
+            text-align: center;
+            padding-top: 250px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        .gradiente{
+            background: red;
+            width: 300px;
+            height: 300px;
+            background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+        }
+    </style>
+</head>
+<body>
+    <h1>FELICIDADES UWWWU</h1>
+    <div id="cuadroBlanco1" class="cuadroBlanco">1</div>
+    <div id="cuadroBlanco2" class="cuadroBlanco">2</div>
+    <div id="cuadroRojo" >3</div>
+    <div id="cuadroMulticolor" ></div>
+    <div id="circulo" ></div>
+    <div class="gradiente" ></div>
+
+
+</body>
+</html>
