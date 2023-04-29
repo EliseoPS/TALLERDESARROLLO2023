@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+	background: #171717;
+}
+header{
+    
+	width: 100%;
+	height: 90px;
+	background-color: white;
+}
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+    
+}
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 80px;
+}
+.logo img:hover{
+	transform: scale(1.1);
+}
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+    
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+    
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+    
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: rgb(37, 79, 128);
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #c4d1f8;
+	position: absolute;
+	width: 100%;
+   
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+  
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+    font-size: 11px;
+}
+.menu-fijo{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+#estatico{
+    position: static;
+    background-color: blue;
+    width: 100%;
+    height: 4000px;
+}
+.slider{
+    
+    width: 50%;
+    overflow: hidden;
+    height: 500px;
+}
+.slider ul{
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%}
+    45%{margin-left:-100%}
+
+    50%{margin-left: -200%}
+    70%{margin-left: -200%}
+
+    75%{margin-left:-300%}
+    100%{margin-left:-300%}
+    }
+   
+
