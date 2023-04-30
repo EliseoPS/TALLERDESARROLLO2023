@@ -6,7 +6,7 @@
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
-	background: #171717;
+	background: rgb(15, 32, 52);
 }
 header{
     
@@ -57,7 +57,7 @@ header{
 	color: black;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bold;
 	padding: 12px 20px;
 	transition: .3s linear;
@@ -120,14 +120,94 @@ header{
     0%{margin-left: 0;}
     20%{margin-left: 0;}
 
-    25%{margin-left: -100%}
-    45%{margin-left:-100%}
+    25%{margin-left: -50%}
+    45%{margin-left:-50%}
 
-    50%{margin-left: -200%}
-    70%{margin-left: -200%}
+    50%{margin-left: -100%}
+    70%{margin-left: -100%}
 
-    75%{margin-left:-300%}
-    100%{margin-left:-300%}
+    75%{margin-left:-150%}
+    100%{margin-left:-150%}
     }
-   
+	#fijo{
+		position: fixed;
+		right: 50px;
+		bottom: 50px;
+		height: 35px;
+		border-radius: 50%;
+	}
 
+	.overlay{
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.3);
+		position: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		visibility: hidden;
+	}
+	.overlay.active{
+		visibility: visible;
+	}
+	.popup{
+		background: white;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+		border-radius: 3px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		padding: 20px;
+		text-align: center;
+		width: 500px;
+		transition: .3s ease all;
+		transform: scale(0.7);
+
+	}
+
+	.popup .btn-cerrar-popup{
+		font-size: 16px;
+		line-height: 16px;
+		display: block;
+		text-align: right;
+		color: #BBBBBB;
+		transition: .3s ease all;
+	}
+
+	.popup .btn-cerrar-popup:hover{
+		color: black;
+
+	}
+
+	.popup h2{
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		opacity: 0;
+
+	}
+	.popup h3{
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		opacity: 0;
+
+	}
+	.btn-abrir-popup :hover{
+		cursor: pointer;
+	}
+	.popup.overlay.active{opacity: 1; transform: scale(1);}
+	.popup.active h2 { animation: entradaTitulo .8s ease .5s forwards; }
+	.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+   
+	@keyframes entradaTitulo {
+		from {
+			opacity: 0;
+			transform: translateY(-25px);
+		}
+	
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}

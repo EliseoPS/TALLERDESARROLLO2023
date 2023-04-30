@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pocket Jet Systems Mexico</title>
     <link src="css/estilos.css" href="css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -33,7 +34,7 @@
     </div>
   </header>
 
-  <div >Bienvenido</div>
+  <div style="font-size: 40px; color: aliceblue;">Bienvenido</div>
 
   <div class="slider"> 
     <ul>
@@ -48,5 +49,17 @@
       </li>
     </ul>
   </div>
-  
+
+  <button class="btn-abrir-popup" id="btn-abrir-popup"><div id="fijo"><img src="imagenes/LOGOWSP.png" alt="whatsapp" style="height: 70px; width: 70px;"></div></button>
+
+<div class="overlay" id="overlay">
+  <div class="popup" id="popup">
+    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-solid fa-x"></i></a>
+    <h2>¡CONTACTANOS! <img src="imagenes/QRWSP.jpg" alt="QR" style="height: 200px; width: 200px;"></h2>
+    <h3 style="font-size: 50px;">+52 477 766 3937</h3>
+    
+  </div>
+</div>
+<script src="popup.js"></script>
 </body>
+</html>
