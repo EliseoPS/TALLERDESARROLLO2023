@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handheld 300H</title>
+    <style>
+      .contenedor{
+        display: flex;
+        color: white;
+        font-size: 25px;
+      }
+      @keyframes fadeIn{
+        0%{opacity: 0;}
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="PAJAROTRANSAPARENTE.ico">
+    <link src="css/estilos.css" href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="interior">
+          <a href="index.html" class="logo" target="blank"><img src="imagenes/SOLOPAJARO.jpg" alt="Logo"></a>
+          <nav class="navegacion">
+            <ul>
+              <li><a href="index.html" target="blank">Inicio</a></li>
+              <li><a href="nuestraEmpresa.html" target="blank">Nuestra Empresa</a></li>
+              <li class="submenu">
+                <a href="impresoras.html" target="blank">Productos</a>
+                <ul class="hijos">
+                  <li><a href="impresoras.html">Impresoras</a></li>
+                  <li><a href="consumibles.html">Consumibles</a></li>
+    
+                </ul>
+              </li>
+              <li><a href="contacto.html" target="blank">Contacto</a></li>
+              <li><a href="serviciosyRep.html" target="blank">Servicio y reparaciones</a></li>
+             
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <h1 style="color: azure; font-family: 'Gill Sans', 'Gill Sans MT'; margin-left: 3%; margin-top: 3%; animation: fadeIn 3s ease;">Handheld 300H</h1>
+
+    <div class="contenedor" style="margin-left: 3%; margin-top: 3%;">
+        <img src="imagenes/impresora2.jpg" alt="" style="height: 500px; width: 500px; border-radius: 10px; animation: fadeIn 3s ease;">
+        <p style="margin-left: 100px; line-height: 40px; animation: fadeIn 3s ease;">
+            Pantalla de 4.3" touchscreen color <br>
+            Medidas: 135 x 128 x 200 mm<br>
+            Peso: 750 gr<br>
+            Funcionamiento: Manual y en líneas de producción de baja velocidad.<br>
+            Resolución hasta 600 dpi<br>
+            Altura de carácter de 1 mm hasta 12 mm<br>
+            Area de impresión: 1 a 8 líneas<br>
+            Distancia de impresión recomendada: 2 a 5 mm<br>
+            Multilenguajes<br>
+            <br>
+            Imprime: Textos, fechas de caducidad, lotes, códigos QR, Códigos de barra, hora, contadores, logos, etc.<br>
+            <br>
+            Velocidad de impresión: 80 m/min<br>
+            Almacén de mensajes: 500 mensajes memoria interna y hasta 1000 mensajes con USB.<br>
+            <br>
+            Interfases internas: Fotocelda, medidor de velocidad<br>
+            Interases externas: Puertos Ethernet y USB<br>
+            <br>
+            Dirección de impresión: 360°<br>
+            <br>
+            Funcionamiento: Manual y en líneas de producción de baja velocidad.<br>
+            Peso: 750 gr<br>
+            Fuente de alimentación: Batería/ eliminador de 9V DC a 2 A<br>
+            Sistema: Linux Operating system<br>
+            <br>
+            Tipos de tinta: Base solvente, base agua, Invisible y grado alimenticio. <br>
+            Detecta el tipo de cartucho automáticamente. Sistema de reporte de consumo de tinta<br>
+            <br>
+            Tecnología: T InkJet<br>
+            Colores de tinta: Negro, azul, rojo, amarillo, blanco y en tinta grado alimenticio rosa<br>
+            Imprime: Vidrio, PET, PVC, metal, cartón, madera, piedra, piel, plástico, celofán, cerámica, unicel, etc.<br>
+            Empaque: Impresora, cargador, batería, stylus pen, cartucho de tinta negra y maletín de traslado<br>
+            Garantía de 12 meses
+        </p>
+    </div>
+
+    <button class="btn-abrir-popup" id="btn-abrir-popup"><div id="fijo"><img src="imagenes/LOGOWSP.png" alt="whatsapp" style="height: 70px; width: 70px;"></div></button>
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-solid fa-x"></i></a>
+        <h2>¡CONTACTANOS! <img src="imagenes/QRWSP.jpg" alt="QR" style="height: 200px; width: 200px;"></h2>
+        <h3 style="font-size: 50px;">+52 477 766 3937</h3>
+        
+      </div>
+    </div>
+    <script src="popup.js"></script>
+
+</body>
+</html>

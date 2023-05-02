@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumibles</title>
+    <link src="css/estilos.css" href="css/estilos.css" rel="stylesheet">
+    <link rel="icon" href="PAJAROTRANSAPARENTE.ico">
+
+
+</head>
+<body>
+    <header>
+        <div class="interior">
+          <a href="index.html" class="logo" target="blank"><img src="imagenes/SOLOPAJARO.jpg" alt="Logo"></a>
+          <nav class="navegacion">
+            <ul>
+              <li><a href="index.html" target="blank">Inicio</a></li>
+              <li><a href="nuestraEmpresa.html" target="blank">Nuestra Empresa</a></li>
+              <li class="submenu">
+                <a href="impresoras.html" target="blank">Productos</a>
+                <ul class="hijos">
+                  <li><a href="impresoras.html">Impresoras</a></li>
+                  <li><a href="consumibles.html">Consumibles</a></li>
+    
+                </ul>
+              </li>
+              <li><a href="contacto.html" target="blank">Contacto</a></li>
+              <li><a href="serviciosyRep.html" target="blank">Servicio y reparaciones</a></li>
+             
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <style>
+        * {
+          box-sizing: border-box;
+          /* Esta propiedad te permite incluir el padding 
+          y border en el ancho y alto del elemento.*/
+        }
+         
+        body {
+          margin: 0px;
+          font-family: Arial;
+        }
+         
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+         
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+          
+        }
+         
+        .column {
+          flex: 25%;
+          max-width: 90%;
+          padding: 0 4px;
+        }
+         
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          border-radius: 25px;
+        }
+         
+        @media (max-width: 800px) {
+          .column {
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+         
+        @media (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
+         <!-- Encabezado -->
+<div class="header">
+    <h1 style="color: azure; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Consumibles</h1>
+    <p style="color: azure; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Usos</p>
+  </div>
+   
+  <!-- Galería -->
+  <div class="row"> 
+    <div class="column">
+    <a href="consumiblex.html"><img src="imagenes/MEKnormal.jpg" style="width:50%"></a>
+    <a href="consumiblex.html"><div style="color: white; margin-top: 10%; font-size: 25px;">Tinta MEK uso normal</div></a>
+      
+    </div>
+    
+    <div class="column">
+      <a href="consumiblesy.html"><img src="imagenes/MEKespecial.jpg" style="width:50%"></a>
+      <a href="consumiblesy.html"><div style="color: white; margin-top: 22%; font-size: 25px;">Tinta MEK uso especial</div></a>
+    </div> 
+     
+
+  </div>
+  
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocketjet AT600-3p</title>
+    <style>
+      .contenedor{
+        display: flex;
+        color: white;
+        font-size: 25px;
+      }
+      @keyframes fadeIn{
+        0%{opacity: 0;}
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="PAJAROTRANSAPARENTE.ico">
+    <link src="css/estilos.css" href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="interior">
+          <a href="index.html" class="logo" target="blank"><img src="imagenes/SOLOPAJARO.jpg" alt="Logo"></a>
+          <nav class="navegacion">
+            <ul>
+              <li><a href="index.html" target="blank">Inicio</a></li>
+              <li><a href="nuestraEmpresa.html" target="blank">Nuestra Empresa</a></li>
+              <li class="submenu">
+                <a href="impresoras.html" target="blank">Productos</a>
+                <ul class="hijos">
+                  <li><a href="impresoras.html">Impresoras</a></li>
+                  <li><a href="consumibles.html">Consumibles</a></li>
+    
+                </ul>
+              </li>
+              <li><a href="contacto.html" target="blank">Contacto</a></li>
+              <li><a href="serviciosyRep.html" target="blank">Servicio y reparaciones</a></li>
+             
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <h1 style="color: azure; font-family: 'Gill Sans', 'Gill Sans MT'; margin-left: 3%; margin-top: 3%; animation: fadeIn 3s ease;">Pocketjet AT600-3p</h1>
+
+    <div class="contenedor" style="margin-left: 3%; margin-top: 3%;">
+        <img src="imagenes/impresora3.jpg" alt="" style="height: 450px; width: 500px; border-radius: 10px; animation: fadeIn 3s ease;">
+        <p style="margin-left: 100px; line-height: 40px; animation: fadeIn 3s ease;">
+            Impresora para líneas de producción con banda transportadora <br>
+            De 1" de alto de impresión<br>
+            Impresora configurable desde 1 hasta 6 cabezales, ya sea de 1/2" o de 1" de altura de impresión.<br>
+            Controlador con cuerpo de aluminio y pantalla de 8" Touchscreen color.<br>
+            Dimensiones: 150mm largo x  110mm ancho x 42mm alto<br>
+            Dirección de la impresión: 360o <br>
+            Resolución de impresión: Hasta 600dpi (alta definición) <br>
+            Número de líneas de impresión: de 1 a 15 líneas ajustables (dependiendo del número de cabezales)<br>
+            Altura de impresión: 2 mm-25,4 mm (dependiendo del modelo, diferentes alturas)<br>
+            Distancia de impresión: 2mm ~ 10mm (distancia de la boquilla al objeto a imprimir). <br>
+            Fuente de alimentación: Eliminador de DC a 16.8v<br>
+            Almacenamiento de información: el sistema puede almacenar más de 1000 mensajes 
+            (la información se puede guardar y transferir insertando una memoria USB) <br>
+            Longitud de los mensajes: cada mensaje puede contener hasta 2000 caracteres de longitud ilimitada<br>
+            Velocidad de impresión: hasta 80 m / min (dependiendo de la resolución)<br>
+            Tipos de tinta: tinta de protección ambiental de secado rápido base solvente, tinta base agua, tinta base aceite, UV y grado alimenticio.<br>
+            Color de tinta: Negro, rojo, azul, amarillo, verde, blanco, invisible y rosa (grado alimenticio).<br>
+            Capacidad del cartucho de tinta: 50ml, puede imprimir 20 millones de caracteres (2mm)<br>
+            Interfaz externa: USB, DB9, interfaz fotoeléctrica, unidad USB, encoder, control de impresión de cabeza.<br>
+            Multilenguaje.<br>
+            Temperatura ambiente de trabajo: 0 ℃ ~ 38 ℃; humedad: 10% ~ 80%<br>
+            Imprime: vidrio, metal, PET, plástico, cartón, MDF, tubo, madera, aluminio, piel, celofán, cerámica, hule espuma, etc.<br>
+            Tipo de contenido a imprimir: Texto, fechas, logos, números seriales, códigos dinámicos,
+                Códigos de barra. datamatrix, QR, tablas, etc.<br>
+            Tipos de códigos de barra：(dependiendo del modelo)<br>
+            UPCA, UPCE, EAN (2/5/8/13), EAN14, EAN128,  PDF417, CODE39, CODE128, DATAMATRIX, QR<br>
+            Tipos de códigos QR：(dependiendo del modelo)<br>
+            QRcode, DataMatrix, MicroQRcode, PDF417, PDF417TRTRUNC, MICROPDF4, 17<br>
+            （Otros tipos disponibles sobre pedido）<br>
+            Contadores: (Dependiendo del modelo) Más de 20 contadores independientes.<br>
+        </p>
+    </div>
+
+    <button class="btn-abrir-popup" id="btn-abrir-popup"><div id="fijo"><img src="imagenes/LOGOWSP.png" alt="whatsapp" style="height: 70px; width: 70px;"></div></button>
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-solid fa-x"></i></a>
+        <h2>¡CONTACTANOS! <img src="imagenes/QRWSP.jpg" alt="QR" style="height: 200px; width: 200px;"></h2>
+        <h3 style="font-size: 50px;">+52 477 766 3937</h3>
+        
+      </div>
+    </div>
+    <script src="popup.js"></script>
+
+</body>
+</html>
