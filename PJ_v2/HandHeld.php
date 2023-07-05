@@ -1,73 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinta MEK Especial</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="PAJAROTRANSAPARENTE.ico">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-</head>
-<html>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="barra" >   
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img class="img-grow" src="imagenes/PAJAROTRANSAPARENTE.png" alt="logo" style="height: 80px; width: 135px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link mx-3 fs-5 img-grow" aria-current="page" href="index.html" style="color: white;">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-3 fs-5 img-grow" href="nuestraEmpresa.html " style="color: white;">Nuestra Empresa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-3 fs-5 img-grow" href="serviciosYReparaciones.html" style="color: white;">Servicios y Reparaciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-3 fs-5 img-grow" href="contacto.html" style="color: white;">Contacto</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle mx-3 fs-5 img-grow" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                  Productos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item img-grow" href="impresoras.html">Impresoras</a></li>
-                  <li><a class="dropdown-item img-grow" href="consumibles.html">Consumibles</a></li>
-                </ul>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+<?php
+      include("encabezado.php");
+    ?>
+    
+    <?php
+      include("navbar.php");
+    ?>
       <div class="container-fluid">
-        <div class="row w-100">
+        <div class="row">
             <div class="col-12 col-md-12">
-                 <a href="consumibles.html"><i class="fa-solid fa-arrow-left fa-2xl mt-5 mx-5 mb-2" style="color: #000000;"></i></a>
+                 <a href="impresoras.php"><i class="fa-solid fa-arrow-left fa-2xl mt-5 mx-5 mb-2" style="color: #000000;"></i></a>
                  
                  
             </div>
         </div>
       </div>
+
       <div class="container-fluid">
-        <div class="row w-100">
-            <div class="col-6 col-md-6">
-                <img src="imagenes/color.jpg" alt="" class="mx-5 mt-4">
+        <div class="row text-center justify-content-center">
+            <div class="col-sm-6 col-md-6 col-12">
+                <img src="imagenes/IMP2.jpg" alt="" class="mt-4 img-fluid" style="height: 500px; width: 500px;">
             </div>
-            <div class="col-6 col-md-6">
-                <h1>Tinta MEK uso normal</h1>
-                <p>Este es nuestro modelo más popular, debido a su versatilidad es 
-                    utilizada por nuestros clientes en todos los sectores empresariales.</p>
-                    <div class="accordion" id="accordionExample">
+            <div class="col-md-6 col-sm-12 col-12">
+                <h1>HandHeld 300H</h1>
+                <p class="fs-5">Ideal para emprendedores, micro, pequeñas y medianas empresas</p>
+
+                    <div class="accordion col-md-12 col-sm-12" id="accordionExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -129,20 +86,38 @@
                       </div>
                     </div>
             </div>
-        </div>
-      </div>
+
+            <div class="container-fluid">
+              <p class="mx-5">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Características destacadas 
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <ul class="fs-4">
+                    - Trabajos robustos <br>
+                    - Versátil <br>
+                    - Libre de mantenimiento <br>
+                    - Batería recargable <br>
+                    - Hasta 300 dpi de resolución <br>
+                    - Mensajes de hasta 2000 caracteres <br>
+                    - Uso manual o en banda transportadora
+
+                  </ul>
+  
+                </div>
+              </div>
+            </div>
+
+
       <div class="separador"></div>
-
-      <button class="btn-abrir-popup" id="btn-abrir-popup"><div id="fijo"><img src="imagenes/LOGOWSP.png" alt="whatsapp" style="height: 70px; width: 70px;"></div></button>
-
-      <div class="overlay" id="overlay">
-        <div class="popup" id="popup">
-          <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fa-solid fa-x"></i></a>
-          <h2>¡CONTACTANOS! <img src="imagenes/QRWSP.jpg" alt="QR" style="height: 200px; width: 200px;"></h2>
-          <h3 style="font-size: 50px;">+52 477 766 3937</h3>
-          
-        </div>
+      <div class="container">
+      <?php
+      include("botonWSP.php");
+    ?>
       </div>
+
 
 <script src="popup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

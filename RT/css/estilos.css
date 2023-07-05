@@ -35,7 +35,7 @@ body{
     font-size: 50px;
     font-family: 'Noto Serif', serif; 
     font-weight: bold;
-    color: #e95a68;
+    color: #a4121c;
     display: inline-block;
     
   }
@@ -163,4 +163,12 @@ body{
   }
   .img-grow:hover{
     transform: scale(1.05);
+  }
+  .custom-divider {
+    border-right: 4px solid white;
+    padding-right: 15px;
+  }
+  .custom-divider:last-child {
+    border-right: none;
+    padding-right: 0;
   }
